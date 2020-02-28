@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"');
+
+*{
+	box-sizing: border-box;
+}
+body
+{
+	background-color:#FCF0CC;  /*A64253  #FCF0CC 861657 */
+	font-family: 'Lato',sans-serif ;
+	margin: 0;
+}
+img{
+	max-width: 100%;
+}
+nav{
+	background-color:#861657;
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	padding: 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+nav a{
+	color: #fff;
+	margin-left: 30px;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+}
+nav a::after{
+	content: '';
+	border-bottom: 3px solid #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(10px);
+	transition: transform 0.3s ease;
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+}
+nav a:hover::after{
+	opacity: 1;
+	transform: translateY(0);
+}
+#welcome-section{
+	padding: 20px;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	background-image: url('https://digitaldefynd.com/wp-content/uploads/2019/08/best-free-coding-courses-classes-tutorials-certification-training-online.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+header::after{
+	content: '';
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.6;
+}
+header *{
+	position: relative;
+	z-index: 1;
+}
+header h1{
+	font-size: 60px;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+header p{
+	margin: 0;
+	font-size: 30px;
+}
+section{
+	padding: 40px;
+	text-align: center;
+}
+section h2{
+	margin: 0;
+}
+section p{
+	margin-top: 0;
+}
+h2{
+	font-family: 'Lato',sans-serif ;
+	font-size: 2rem;
+	
+}
+.project-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 810px;
+	margin: 20px auto 0;
+}
+
+.project-tile {
+	max-width: 250px;
+	margin: 10px;
+	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+.project-tile:hover{
+	transform: scale(1.05);
+}
+.project-tile img{
+	border: 10px solid #FFF;
+	height: 250px;
+	max-width: 100%;
+	border-radius: 3px;
+	box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+}
+.project-tile img:hover{
+	border-color: #A64253;
+}
+.project-tile p{
+	margin-top: 10px;
+	font-size: 20px;
+	color: #000;
+}
+.update{
+	background: #861657;
+	padding: 15px 20px;
+	color: #fff;
+	border-radius: 10px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-size: 1.1rem;
+	font-family: 'Lato',sans-serif ;
+	box-shadow: 9px 9px 16px rgb(163,177,198,0.3), -9px -9px 16px    rgba(255,255,255, 0.5);
+	transition: transform 0.3s ease;
+}
+.update:hover{
+	transform: scale(1.05);
+	background-color: #A64253;
+}
+.bg-pinkish{
+	background-color: #A64253;
+	color: #fff;
+}
+.social-links{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.social-links a{
+	border-radius: 50%;
+	border: 3px solid #fff;
+	color: #fff;
+	font-size: 25px;
+	margin: 5px 10px;
+	height: 50px;
+	width: 50px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+footer{
+	background-color: #861657;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+footer .fa-heart{
+	color: red;
+}
+@media only screen and(min-width: 375px){
+	
+	header{
+	background-image: url('https://digitaldefynd.com/wp-content/uploads/2019/08/best-free-coding-courses-classes-tutorials-certification-training-online.jpg');
+	}
+}
+
+
+
