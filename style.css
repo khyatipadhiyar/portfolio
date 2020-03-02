@@ -161,7 +161,7 @@ margin: 5px;
 	font-family: 'Lato',sans-serif ;
 	box-shadow: 9px 9px 16px rgb(163,177,198,0.3), -9px -9px 16px    rgba(255,255,255, 0.5);
 	transition: transform 0.3s ease;
-
+	cursor: pointer;
 }
 .update:hover{
 	transform: scale(1.05);
@@ -202,14 +202,15 @@ footer .fa-heart{
 	color: red;
 }
 
-@media only screen and(min-width: 375px){
+@media only screen and (max-width: 600px) {
 	
 	header{
 	background-image: url('https://digitaldefynd.com/wp-content/uploads/2019/08/best-free-coding-courses-classes-tutorials-certification-training-online.jpg');
 	}
 	.update{
-		width: 100%;
+		width:100%;
 	}
+
 }
 
 
