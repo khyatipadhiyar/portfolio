@@ -110,6 +110,11 @@ h2{
 	max-width: 810px;
 	margin: 20px auto 0;
 }
+.about-icon{
+	font-size: 25px;
+	color: #fff;
+	text-decoration: none;
+}
 
 .project-tile {
 	max-width: 250px;
@@ -135,17 +140,28 @@ h2{
 	font-size: 20px;
 	color: #000;
 }
+.btn{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin: 5px;
+}
+.btn a{
+	margin: 5px;
+	}
 .update{
 	background: #861657;
-	padding: 15px 20px;
+	padding: 15px 25px;
 	color: #fff;
-	border-radius: 10px;
+	border-radius: 30px;
 	text-decoration: none;
 	letter-spacing: 1px;
 	font-size: 1.1rem;
 	font-family: 'Lato',sans-serif ;
 	box-shadow: 9px 9px 16px rgb(163,177,198,0.3), -9px -9px 16px    rgba(255,255,255, 0.5);
 	transition: transform 0.3s ease;
+
 }
 .update:hover{
 	transform: scale(1.05);
@@ -185,10 +201,14 @@ footer{
 footer .fa-heart{
 	color: red;
 }
+
 @media only screen and(min-width: 375px){
 	
 	header{
 	background-image: url('https://digitaldefynd.com/wp-content/uploads/2019/08/best-free-coding-courses-classes-tutorials-certification-training-online.jpg');
+	}
+	.update{
+		width: 100%;
 	}
 }
 
